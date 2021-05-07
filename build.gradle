@@ -20,18 +20,7 @@ allprojects {
 }
 
 def commitsSinceLastTag() {
-    if (grgit == null) {
-        return 0
-    }
-    def tags = grgit.tag.list().stream().map({it.commit}).toList()
-    def commit = grgit.head()
-    def depth = 0
-    while (true) {
-        if (tags.contains(commit))
-            return depth
-        depth++
-        commit = grgit.resolve.toCommit(commit.parentIds.get(0))
-    }
+    return 0
 }
 
 ext {
