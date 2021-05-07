@@ -247,7 +247,7 @@ public class Essentials extends JavaPlugin implements net.ess3.api.IEssentials {
             try {
                 final EssentialsUpgrade upgrade = new EssentialsUpgrade(this);
                 upgrade.beforeSettings();
-                execTimer.mark("Upgrade");
+                execTimer.mark("Upgrwwade");
 
                 confList = new ArrayList<>();
                 settings = new Settings(this);
